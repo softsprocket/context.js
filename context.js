@@ -76,7 +76,7 @@ Context.prototype.template = function (tmplStr, tmplObj) {
 
 		tmplStr = tmplStr.replace (tmplStr.substring (ctxMatch.index, ctxPos + endCtx.index + endCtx[0].length), replStr);
 
-		ctxMatch = undefined;	
+		ctxMatch = tmplStr.match (this.ctxRegex);	
 
 	}
 
