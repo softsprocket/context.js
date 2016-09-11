@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=UTF-8">
+<title>Context JS</title>
+<script type="text/javascript" src="context.js"></script>
+</head>
+
+<body>
+
+</body>
+	<script>
+		window.onload = function () {
+			var c = new Context ();
+			c.require (['one.js', 'two.js', 'three.js'], '/context/test/js', function (context) {
+				three (context);
+			});
+		};
+	</script>
+</html> 
